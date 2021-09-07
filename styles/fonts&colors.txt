@@ -1,0 +1,20 @@
+Fonts:
+
+Heading fonts:
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+    font-family: 'Open Sans', sans-serif;
+
+
+Sub Heading fonts:
+    font-family: tekton-pro, sans-serif;
+
+
+Paragraph fonts:
+    font-family: 'Merriweather', serif;
+    font-family: adobe-garamond-pro, serif;
+
+Colors: 
+
+Main color -> White
+Highlight color -> Black
