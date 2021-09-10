@@ -17,6 +17,15 @@
   bottom: 20px;
 }
 
+.visiblity {
+  visibility: visible;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
 .sidebar{
   position: fixed;
   top: 0;

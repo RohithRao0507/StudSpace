@@ -1,19 +1,36 @@
-var downArrow =$(".arrow");
+var downArrow = $(".arrow");
 for (var i = 0; i < downArrow.length; i++) {
-  downArrow[i].addEventListener("click", (e)=>{
- let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
- arrowParent.classList.toggle("showMenu");
+  downArrow[i].addEventListener("click", (e) => {
+    let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+    arrowParent.classList.toggle("showMenu");
   });
 }
-var sidebar = $(".sidebar")[0];
-var sidebarOpenBtn = $(".menu")[0];
-var sidebarCloseBtn = $(".left-arrow");
 
+var sideBar = document.getElementById('sideBar');
 
-sidebarOpenBtn.addEventListener("click", function(){
+var toogle = $('.sidebar')[0]
 
-//   sidebarCloseBtn.css('visibility',"visible");
+var menuBtnOpen = document.getElementById('menubtnOpen');
+var menuBtnClose = document.getElementById('menubtnClose');
 
-  sidebar.classList.toggle("close");
-//   sidebarOpenBtn.css('visibility',"hidden");
+if (sideBar.className == 'sidebar close') {
+  console.log('CloseBtn -Hid')
+  menuBtnClose.classList.add('hidden')
+}
+
+menuBtnOpen.addEventListener('click', () => {
+  if (sideBar.className == 'sidebar close') {
+    menuBtnOpen.classList.add('hidden');
+  }
+  toogle.classList.toggle("close");
+  menuBtnClose.classList.remove('hidden');
+});
+
+menuBtnClose.addEventListener('click', function () {
+  if (sideBar.className == 'sidebar') {
+    menuBtnClose.classList.add('visiblity');
+  }
+  toogle.classList.toggle("close");
+  menuBtnClose.classList.add('hidden');
+  menuBtnOpen.classList.remove('hidden');
 });
