@@ -15,7 +15,7 @@ var menuBtnClose = document.getElementById('menubtnClose');
 
 if (sideBar.className == 'sidebar close') {
   console.log('CloseBtn -Hid')
-  menuBtnClose.classList.add('hidden')
+  menuBtnClose.classList.add('hidden');
 }
 
 menuBtnOpen.addEventListener('click', () => {
