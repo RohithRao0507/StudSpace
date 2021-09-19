@@ -103,32 +103,42 @@
     </div>
     <!-- Navbar ends here, -->
 
-    <!-- Empty Area -->
-    <div id="emptyArea" class="empty-area">
-        <p> # This is Empty</p>
-    </div>
-    <!-- End Empty Area -->
-
-    <!-- Upload Area -->
-    <div id="uploadArea" class="upload-area">
-        <!-- Drop Zoon -->
-        <div id="dropZoon" class="upload-area__drop-zoon">
-            <div class="upload-area__drop-zoon drop-zoon">
-                <p class="drop-zoon__paragraph">Drop your file here or Click to browse</p>
-                <input type="file" id="fileInput" class="drop-zoon__file-input" type="file">
+  <!-- main page content -->
+    <section class="home-section">
+        <div class="home-content">
+            <!-- Empty Area -->
+            <div id="emptyArea" class="empty-area">
+                <p> # This is Empty</p>
             </div>
+            <!-- End Empty Area -->
 
-            <div class='upload-area__drop-zoon file--upload'>
-                <label for='input-file'>
-                    <i class="material-icons">cloud_upload</i>Upload
-                </label>
-                <input id='input-file' type='file' />
+            <!-- Upload Area -->
+            <div id="uploadArea" class="upload-area">
+                <!-- Drop Zoon -->
+                <div id="dropZoon" class="upload-area__drop-zoon">
+                    <div class="upload-area__drop-zoon drop-zoon">
+                        <p class="drop-zoon__paragraph">Drop your file here or Click to browse</p>
+                        <input type="file" id="fileInput" class="drop-zoon__file-input" type="file">
+                    </div>
+
+                    <div class='upload-area__drop-zoon file--upload'>
+                        <label for='input-file'>
+                            <i class="material-icons">cloud_upload</i>
+                        </label>
+                        <input id='input-file' type='file' />
+                    </div>
+
+                </div>
+                <!-- End Drop Zoon -->
             </div>
+            <!-- End Upload Area -->
 
         </div>
-        <!-- End Drop Zoon -->
-    </div>
-    <!-- End Upload Area -->
+    </section>
+
+    
+
+
 
     <!-- Js Script including jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
