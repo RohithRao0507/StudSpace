@@ -1,38 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stud Space</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stud Space</title>
 
-    <!-- Bootstrap 5 css  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Bootstrap 5 javaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <!-- Bootstrap 5 css  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Bootstrap 5 javaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Open+Sans:wght@300;400;700&family=Quicksand:wght@400;700&family=Source+Serif+Pro:wght@300;400;900&display=swap" rel="stylesheet">
+  <!-- Boxicons cdn -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- Adobe Fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/vlf0czq.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Open+Sans:wght@300;400;700&family=Quicksand:wght@400;700&family=Source+Serif+Pro:wght@300;400;900&display=swap"
+    rel="stylesheet">
 
-    <!-- Css StyleSheet -->
-    <link rel="stylesheet" href="styles/style.css">
+  <!-- Adobe Fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/vlf0czq.css">
 
-    
+  <!-- Css StyleSheet -->
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/style.css">
+
+
 </head>
+
 <body>
+  <!-- NavBar -->
+  <div id="sideBar" class="sidebar close">
+    <div class="logo-details">
+      <i id="menubtnOpen" class='fas fa-bars'></i>
+      <i id="menubtnClose" class="fas fa-times "></i>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="index.html"><i class="fas fa-th-large"></i><span class="link_name">Dashboard</span></a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="index.html">Dashboard</a></li>
+        </ul>
+      </li>
 
-  
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="far fa-window-restore"></i>
+            <span class="link_name">Courses</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Courses</a></li>
+          <li><a href="pages/cse.html">CSE</a></li>
+          <li><a href="#">ECE</a></li>
+          <li><a href="#">BT</a></li>
+        </ul>
+      </li>
 
-    <!-- Added Js script -->
-    <script src="javaScript/index.js"></script>
+      <li>
+        <a href="pages/team.html"><i class='fa fa-users'></i><span class="link_name">Team</span></a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="pages/team.html">Team</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="pages/uploadPage.html"><i class='fa fa-file-upload'></i><span class="link_name">Add Paper</span></a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="pages/uploadPage.html">Add Paper</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="pages/aboutUs.html"><i class='fa fa-info'></i><span class="link_name">About Us</span></a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="pages/aboutUs.html">About Us</a></li>
+        </ul>
+      </li>
+
+      <div class="logo-details logo-title">
+        <i class="fab fa-speaker-deck"></i>
+        <span class="logo_name">StudSpace</span>
+      </div>
+    </ul>
+  </div>
+  <!-- Navbar ends here, -->
+
+
+  <!-- main page content -->
+  <section class="home-section">
+    <div class="home-content">
+      <span class="text">Welcome!!!</span>
+    </div>
+  </section>
+
+  <!-- Js Script including jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="javaScript/sidebar.js"></script>
+  <script src="javaScript/index.js"></script>
 </body>
+
 </html>
