@@ -232,7 +232,7 @@
 }
 .home-section{
   position: relative;
-  padding-left: 20px;
+
   background: #E4E9F7;
   height: 100vh;
   left: 260px;
@@ -244,6 +244,7 @@
   width: calc(100% - 78px);
 }
 .home-section .home-content{
+  padding-left: 20px;
   height: 60px;
   display: flex;
   align-items: center;

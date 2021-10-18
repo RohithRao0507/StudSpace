@@ -1,0 +1,25 @@
+/* Footer.css */
+.footer-section{
+    align-items: center;
+    padding: 20px 0px;
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+    color: #E4E9F7;
+    background-color: #11101D;
+}
+
+.footer-row{
+
+    text-align: center;
+    margin: 0;
+
+}
+.footer-main{
+    font-size: 18px;
+    font-weight:bold;
+}
+.footer-sub{
+    font-size: 15px;
+    padding: 0px
+}
